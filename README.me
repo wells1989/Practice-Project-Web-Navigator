@@ -1,0 +1,24 @@
+# Web Navigator
+
+Web Navigator is a tool that allows users to input url's, and navigate back or forward through their browsing history
+
+## Installation
+
+node.js: https://nodejs.org/en#home-downloadhead
+
+prompt-sync: npm install prompt-sync
+
+## Usage
+
+```javascript
+require('prompt-sync')();
+```
+
+## Instructions
+The program starts with asking for user input, which can be in the form of a URL, or the options 'b' (back) 'n' (next) or 'q' (quit.)
+- If putting in a URL it becomes the current page, and if another URL is inputted, the new URL becomes the current page and the previous URL gets pushed on to the back pages stack (available via the 'b' command)
+- The navigator uses two stacks, one for back pages and one for next pages. Hitting 'b' will return the top of the back pages stack, and 'n' will return the top of the front pages stack
+- 'q' will quit the program
+
+### Additional Comments
+This was a practice project (initially run on CodeCademy's learning platform,) focusing on utilising stacks in JavaScript applications, so the majority of the new code was done in the script.js file, linking the stacks previously developed to link to user input prompts.
